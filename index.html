@@ -1,159 +1,255 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Printonomy — Email Signature</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 40px 20px;
-    }
-    h1 { font-size: 24px; color: #1a1a2e; margin-bottom: 4px; }
-    .subtitle { font-size: 14px; color: #e94560; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      padding: 32px;
-      max-width: 600px;
-      width: 100%;
-      margin-bottom: 24px;
-    }
-    .card h2 { font-size: 16px; color: #1a1a2e; margin-bottom: 16px; border-bottom: 2px solid #e94560; padding-bottom: 8px; }
-    .preview-box {
-      background: #fafafa;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
-      padding: 24px;
-    }
-    .steps { list-style: decimal; padding-left: 20px; line-height: 2; font-size: 14px; color: #555; }
-    .code {
-      background: #1a1a2e;
-      color: #e94560;
-      font-family: monospace;
-      font-size: 13px;
-      padding: 12px 16px;
-      border-radius: 4px;
-      margin-top: 12px;
-      word-break: break-all;
-    }
-    footer { font-size: 12px; color: #999; margin-top: 16px; }
-  </style>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Email Signature</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  </head>
 
-  <h1>Printonomy</h1>
-  <p class="subtitle">Exchange Email Signature Template</p>
-
-  <!-- Live preview -->
-  <div class="card">
-    <h2>Signature Preview</h2>
-    <div class="preview-box">
-
-      <!-- ========== SIGNATURE PREVIEW ========== -->
-      <table cellpadding="0" cellspacing="0" border="0"
-        style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #333333; border-collapse: collapse; max-width: 520px;">
+  <body>
+    <table
+      style="
+        width: 480px;
+        font-size: 10pt;
+        font-family: Arial, sans-serif;
+        line-height: normal;
+        background: transparent !important;
+      "
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tbody>
         <tr>
-          <td colspan="3" style="padding-bottom: 10px;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;"><tr>
-              <td style="border-top: 2px solid #e94560; font-size: 0; line-height: 0;">&nbsp;</td>
-            </tr></table>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" style="padding-bottom: 12px;">
-            <a href="https://www.printonomy.com" target="_blank" style="text-decoration: none;">
-              <img src="assets/images/logo.svg" alt="Printonomy" width="160" height="40" border="0" style="display: block;" />
+          <td
+            style="
+              padding-top: 10px;
+              padding-bottom: 12px;
+              width: 160px;
+              vertical-align: top;
+            "
+            valign="top"
+          >
+            <a href="https://www.printonomy.io" target="_blank">
+              <img
+                border="0"
+                width="141"
+                style="width: 141px; height: auto; border: 0"
+                src="https://printonomy.github.io/signature/assets/images/logo.png"
+              />
             </a>
           </td>
-        </tr>
-        <tr>
-          <td colspan="3" style="padding-bottom: 2px;">
-            <span style="font-size: 15px; font-weight: 700; color: #1a1a2e;">Jane Doe</span>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3" style="padding-bottom: 10px;">
-            <span style="font-size: 12px; color: #e94560; text-transform: uppercase; letter-spacing: 0.5px;">Print Specialist</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="vertical-align: top; padding-right: 16px;">
-            <table cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="padding-bottom: 4px; font-size: 12px; color: #555555; white-space: nowrap;">📞&nbsp;<a href="tel:+310000000000" style="color: #333333; text-decoration: none;">+31 (0) 00 000 00 00</a></td></tr>
-              <tr><td style="padding-bottom: 4px; font-size: 12px; color: #555555; white-space: nowrap;">✉&nbsp;<a href="mailto:hello@printonomy.com" style="color: #e94560; text-decoration: none;">hello@printonomy.com</a></td></tr>
-              <tr><td style="padding-bottom: 4px; font-size: 12px; color: #555555; white-space: nowrap;">🌐&nbsp;<a href="https://www.printonomy.com" style="color: #333333; text-decoration: none;">www.printonomy.com</a></td></tr>
-              <tr><td style="font-size: 12px; color: #555555;">📍&nbsp;Amsterdam, The Netherlands</td></tr>
+          <td style="padding-top: 6px; padding-bottom: 6px; width: 320px">
+            <table cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      font-size: 12pt;
+                      font-family: Arial, sans-serif;
+                      font-weight: bold;
+                      color: #3d3c3f;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #3d3c3f"
+                    >
+                      %%FirstName%% %%LastName%%
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-bottom: 11px;
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #3d3c3f;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #3d3c3f"
+                    >
+                      %%Title%%
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      %%MobileNumber%%
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #1793d2"
+                    >
+                      <span
+                        style="font-family: Arial, sans-serif; color: #1793d2"
+                      >
+                        %%Email%%
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      <strong>Printonomy UG (Haftungsbeschränkt)</strong>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      Schweinfurter Str. 82
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      97493 Bergrheinfeld
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      Amtsgericht Schweinfurt · HRB 10056
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      font-size: 10pt;
+                      font-family: Arial, sans-serif;
+                      color: #9b9b9b;
+                    "
+                  >
+                    <span
+                      style="font-family: Arial, sans-serif; color: #9b9b9b"
+                    >
+                      Geschäftsführer: Sebastian Fox
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top: 6px">
+                    <span style="display: inline-block; height: 22px">
+                      <span>
+                        <a
+                          href="https://www.linkedin.com/company/printonomy-ug/"
+                          target="_blank"
+                        >
+                          <img
+                            border="0"
+                            width="20"
+                            height="20"
+                            style="border: 0; height: 20px; width: 20px"
+                            src="https://printonomy.github.io/signature/assets/images/social-linkedin.png" /></a
+                        >&nbsp;&nbsp;
+                      </span>
+                      <span>
+                        <a
+                          href="https://www.instagram.com/printonomy.io"
+                          target="_blank"
+                        >
+                          <img
+                            border="0"
+                            width="20"
+                            height="20"
+                            style="border: 0; height: 20px; width: 20px"
+                            src="https://printonomy.github.io/signature/assets/images/social-instagram.png" /></a
+                        >&nbsp;&nbsp;
+                      </span>
+                      <span>
+                        <a href="https://wa.me/+4915566361156" target="_blank">
+                          <img
+                            border="0"
+                            width="20"
+                            height="20"
+                            style="border: 0; height: 20px; width: 20px"
+                            src="https://printonomy.github.io/signature/assets/images/social-whatsapp.png" /></a
+                        >&nbsp;&nbsp;
+                      </span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </td>
-          <td style="width: 1px; background-color: #dddddd; padding: 0 12px 0 0;">&nbsp;</td>
-          <td style="vertical-align: top; padding-left: 16px;">
-            <table cellpadding="0" cellspacing="0" border="0"><tr>
-              <td style="padding-right: 8px;"><a href="https://www.facebook.com/printonomy" target="_blank"><img src="assets/images/social-facebook.svg" alt="Facebook" width="24" height="24" border="0" style="display: block;" /></a></td>
-              <td style="padding-right: 8px;"><a href="https://www.instagram.com/printonomy" target="_blank"><img src="assets/images/social-instagram.svg" alt="Instagram" width="24" height="24" border="0" style="display: block;" /></a></td>
-              <td><a href="https://www.linkedin.com/company/printonomy" target="_blank"><img src="assets/images/social-linkedin.svg" alt="LinkedIn" width="24" height="24" border="0" style="display: block;" /></a></td>
-            </tr></table>
-          </td>
         </tr>
         <tr>
-          <td colspan="3" style="padding-top: 12px;">
-            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;"><tr>
-              <td style="border-top: 1px solid #dddddd; font-size: 0; line-height: 0;">&nbsp;</td>
-            </tr></table>
+          <td
+            colspan="2"
+            style="
+              border-top: 1px solid;
+              border-top-color: #1793d2;
+              width: 480px;
+              padding-top: 8px;
+              font-family: Arial, sans-serif;
+              color: #9b9b9b;
+              text-align: justify;
+            "
+          >
+            <span style="font-family: Arial, sans-serif; color: #9b9b9b">
+              Diese E-Mail und etwaige Anhänge enthalten vertrauliche
+              Informationen und sind ausschließlich für den bezeichneten
+              Empfänger bestimmt. Sollten Sie diese Nachricht irrtümlich
+              erhalten haben, informieren Sie bitte den Absender und löschen Sie
+              die E-Mail.
+            </span>
           </td>
         </tr>
-        <tr>
-          <td colspan="3" style="padding-top: 8px; font-size: 10px; color: #999999; line-height: 1.4;">
-            This email and any attachments are confidential and intended solely for the use of the named recipient(s).
-            If you have received this email in error, please notify the sender and delete it from your system.
-          </td>
-        </tr>
-      </table>
-      <!-- ========== END PREVIEW ========== -->
-
-    </div>
-  </div>
-
-  <!-- How to use -->
-  <div class="card">
-    <h2>How to Install in Outlook / Exchange</h2>
-    <ol class="steps">
-      <li>Open <strong>Outlook</strong> → <em>File → Options → Mail → Signatures → New</em></li>
-      <li>Name the signature (e.g. <em>Printonomy</em>) and click <strong>OK</strong></li>
-      <li>Click the <strong>HTML source</strong> button (or use the web-based OWA editor)</li>
-      <li>Open <a href="signature.html">signature.html</a> from this repository</li>
-      <li>Copy the <code>&lt;table&gt;…&lt;/table&gt;</code> block and paste it into the editor</li>
-      <li>Replace <code>[YOUR NAME]</code>, <code>[YOUR TITLE]</code>, <code>[YOUR PHONE]</code>, and <code>[YOUR EMAIL]</code> with your details</li>
-      <li>Save and assign the signature to your account</li>
-    </ol>
-  </div>
-
-  <!-- Asset URLs -->
-  <div class="card">
-    <h2>Asset URLs (GitHub Pages)</h2>
-    <p style="font-size: 14px; color: #555; margin-bottom: 8px;">Images are automatically served from GitHub Pages at:</p>
-    <div class="code">https://printonomy.github.io/signature/assets/images/logo.svg</div>
-    <div class="code">https://printonomy.github.io/signature/assets/images/social-facebook.svg</div>
-    <div class="code">https://printonomy.github.io/signature/assets/images/social-instagram.svg</div>
-    <div class="code">https://printonomy.github.io/signature/assets/images/social-linkedin.svg</div>
-    <p style="font-size: 12px; color: #999; margin-top: 12px;">
-      To update an image, simply replace the file in the <code>assets/images/</code> folder and push to <code>main</code>.
-      All signatures will pick up the new image automatically on next load.
-    </p>
-  </div>
-
-  <footer>
-    &copy; Printonomy — <a href="https://github.com/Printonomy/signature" style="color: #e94560;">GitHub Repository</a>
-  </footer>
-
-</body>
+      </tbody>
+    </table>
+  </body>
 </html>
