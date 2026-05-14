@@ -38,13 +38,13 @@ https://printonomy.github.io/signature/assets/images/
 
 Updating an asset is as simple as replacing the file in `assets/images/` and pushing to `main` — all signatures pick up the new version automatically on next load.
 
-## Customising
+## Customizing
 
 | Placeholder | Replace with |
 |---|---|
 | `[YOUR NAME]` | Full name |
 | `[YOUR TITLE]` | Job title |
-| `[YOUR PHONE]` | Phone number (also update `href="tel:…"`) |
+| `[YOUR_PHONE]` | Phone number (also update `href="tel:…"`) |
 | `[YOUR EMAIL]` | Email address (also update `href="mailto:…"`) |
 | `[YOUR ADDRESS]` | Office address |
 
